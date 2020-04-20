@@ -122,12 +122,14 @@ public class CarpetServer // static for now - easier to handle all around the co
     {
         pluginChannels.onPlayerConnected(player);
         LoggerRegistry.playerConnected(player);
+        DiscordClient.playerAction(player, 'connect', 0); //discord client ref (modifying the main class hell yea)
     }
 
     public static void playerDisconnected(EntityPlayerMP player)
     {
         pluginChannels.onPlayerDisconnected(player);
         LoggerRegistry.playerDisconnected(player);
+        DiscordClient.playerAction(player, 'disconnect', 0);
     }
     
     public static Random setRandomSeed(int p_72843_1_, int p_72843_2_, int p_72843_3_)

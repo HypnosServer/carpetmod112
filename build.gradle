@@ -114,6 +114,15 @@ processJson
 	releaseJson = "jsons/${minecraft.version}-rel.json"
 }
 
+repositories {
+	jcenter()
+}
+
+dependencies {
+	compile ('net.dv8tion:JDA:4.1.1_126') {
+		exclude module: 'opus-java'
+	}
+}
 
 // ===== TOP-LEVEL TASKS =====
 
