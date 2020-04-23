@@ -120,7 +120,7 @@ repositories {
 }
 
 dependencies {
-	compile "net.dv8tion:JDA:4.1.1"
+	compile "net.dv8tion:JDA:4.1.1_104"
 }
 
 // ===== TOP-LEVEL TASKS =====
