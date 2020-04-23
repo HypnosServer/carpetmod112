@@ -11,7 +11,6 @@ buildscript
 	repositories
 	{
 		mavenCentral()
-		jcenter()
 		maven {url 'https://masa.dy.fi/maven/'}
 		maven {url 'https://files.minecraftforge.net/maven'}
 		maven {url 'https://plugins.gradle.org/m2/'}
